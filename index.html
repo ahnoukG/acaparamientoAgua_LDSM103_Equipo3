@@ -1,1 +1,78 @@
-index.html
+<html>
+<head>
+	<title> ¿Dónde está el agua? </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite,home,menu,search,settings" rel="stylesheet" />
+
+	<script type="text/javascript" src="script.js"></script>
+
+
+</head>
+<body id="body">
+	<header>
+		<span id="main_Icon" class="material-symbols-outlined" s>home</span>
+		<h1 id="main_Title">¿DÓNDE ESTÁ EL AGUA?</h1>
+		<span id="menu_Icon"class="material-symbols-outlined">menu</span>
+		<p id="main_Description"> Una mirada y análisis al acaparamiento del agua en México y el estado de Guanajuato </p>
+	</header>
+
+	<div id="content">
+		<ul class="listado-horizontal">
+			<li id="li_Acaparamiento">Acaparamiento</li>
+			<li id="li_Acaparadores">Acaparadores</li>
+			<li id="li_Consecuencias">Consecuencias</li>
+			<li id="li_Acciones">Acciones</li>
+			<li id="li_Conclusion">Conclusión</li>
+		</ul>
+
+		<div id="content_Acaparamiento">
+			<h2 id="text_Content"> ACAPARAMIENTO </h2>
+			<p id="text_Info"> El acaparamiento de agua es la concentración desproporcionada de recursos hídricos por parte de empresas, industrias o personas, limitando el acceso a comunidades y ecosistemas locales y generando escasez en zonas vulnerables. </p>
+			<br>
+			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Acaparadores()">
+		</div>
+
+		<div id="content_Acaparadores" style="visibility: hidden;">
+			<h2 id="text_Content"> ACAPARADORES </h2>
+			<p id="text_Info"> En México, los acaparadores de agua incluyen grandes empresas agrícolas que utilizan prácticas intensivas, la industria minera que consume grandes volúmenes de agua, y compañías multinacionales de bebidas que extraen recursos hídricos para la producción de refrescos y aguas embotelladas. También están los desarrolladores inmobiliarios que requieren agua para proyectos de construcción y, en ocasiones, gobiernos locales que otorgan concesiones a estas empresas, priorizando intereses económicos sobre el acceso al agua de las comunidades. Este acaparamiento limita el derecho al agua de las poblaciones vulnerables y agrava la escasez hídrica.</p>
+			<br>
+			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Consecuencias()">
+		</div>
+
+		<div id="content_Consecuencias" style="visibility: hidden;">
+			<h2 id="text_Content"> CONSECUENCIAS </h2>
+			<p id="text_Info"> Las consecuencias del acaparamiento de agua en México son graves y variadas. La escasez de agua potable afecta a millones de personas, especialmente en comunidades vulnerables, limitando su acceso a este recurso esencial. Además, la sobreexplotación de acuíferos provoca la degradación de ecosistemas, la pérdida de biodiversidad y el deterioro de la calidad del agua. También se generan conflictos sociales y económicos entre comunidades locales y empresas que controlan los recursos hídricos, exacerbando las desigualdades y creando tensiones en regiones ya afectadas por la sequía.</p>
+			<br>
+			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Acciones()">
+		</div>
+
+		<div id="content_Acciones" style="visibility: hidden;">
+			<h2 id="text_Content"> ACCIONES </h2>
+			<p id="text_Info"> ACCIONES </p>
+			<br>
+			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Conclusion()">
+		</div>
+
+		<div id="content_Conclusion" style="visibility: hidden;">
+			<h2 id="text_Content"> CONCLUSIÓN </h2>
+			<p id="text_Info"> CONCLUSIÓN </p>
+			<br>>
+		</div>
+
+
+	</div>
+
+<footer> 
+	LDSM103. Equipo 3.
+</footer>
+</body>
+
+</html>
