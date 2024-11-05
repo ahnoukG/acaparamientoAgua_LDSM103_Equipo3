@@ -1,1 +1,152 @@
-style.css
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+
+body {
+	text-align: center;
+	background-image: url("images/water5.jpg");
+
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Source Sans Pro', sans-serif;
+	background-position: center; 
+	transition: background-image 0.5s ease-in-out; 
+}
+
+header
+{
+	background-color: #0048634d;;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border-style: solid;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+        margin-top: -15px;
+}
+#main_Icon
+{
+	display:inline-block;
+	margin-right: 5%;
+    margin-left: -5%;
+    font-size: 35px;
+
+
+}
+
+#menu_Icon
+{	
+	margin-left: 5%;
+	 font-size: 35px;
+}
+
+
+
+h1 {
+	display:inline-block;
+	font-family: Oxygen;
+	font-weight: 900;
+	line-height: 1em;
+    text-shadow: 0px 0px 2px white;
+    opacity: 0.6;
+    transition: 0.3s;
+    
+
+}
+
+h1:hover
+{
+    opacity: 1
+
+}
+
+h2
+{
+	margin-top: -20px;
+}
+
+span:hover
+{
+	text-shadow: 0px 0px 2px white;
+}
+
+#main_Description
+{
+	margin-top: -20px;
+}
+
+
+footer 
+{
+	margin-top: 21%;
+	background-color: #0048634d;;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.next_Button
+{
+	color: white;
+}
+
+#arrow_Button
+{
+	display: inline-block;
+    text-align: center;
+    width: 6%;
+    animation: glow 2s infinite;
+}
+
+img:hover
+{
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.listado-horizontal 
+{
+	list-style: none;
+	padding: 0;
+	margin: 40px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2px;
+}
+
+.listado-horizontal li {
+margin-right: 20px;
+}
+
+li:hover 
+{
+}
+
+#text_Content
+{
+	transition: opacity 0.5s ease-in-out;
+}
+
+#text_Info
+{
+	margin-top: -20px;
+	text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+.moreContent {
+    padding-top: 50px;
+    text-align: center;
+        }
+
+#li_Acaparamiento
+{
+    font-weight: bold;
+}
