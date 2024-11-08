@@ -3,7 +3,7 @@
 body {
 	text-align: center;
 	background-image: url("images/water5.jpg");
-
+    background-attachment: fixed;
 	color: rgba(255, 255, 255, 1);
 	font-family: 'Source Sans Pro', sans-serif;
 	background-position: center; 
@@ -49,17 +49,11 @@ h1 {
 	font-weight: 900;
 	line-height: 1em;
     text-shadow: 0px 0px 2px white;
-    opacity: 0.6;
     transition: 0.3s;
     
 
 }
 
-h1:hover
-{
-    opacity: 1
-
-}
 
 h2
 {
@@ -79,7 +73,7 @@ span:hover
 
 footer 
 {
-	margin-top: 21%;
+	margin-top: 5%;
 	background-color: #0048634d;;
     color: #ffffff;
     border: none;
