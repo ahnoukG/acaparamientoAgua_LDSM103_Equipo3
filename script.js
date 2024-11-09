@@ -23,12 +23,4 @@ function show_Content(li_ID, div_Content) {
             if (targetLi) {
                 targetLi.style.fontWeight = 'bold';
             }
-
-            
-
-
         }
-
-
-
-
