@@ -3,11 +3,17 @@
 body {
 	text-align: center;
 	background-image: url("images/water5.jpg");
-    background-attachment: fixed;
+	background-attachment: fixed;
 	color: rgba(255, 255, 255, 1);
 	font-family: 'Source Sans Pro', sans-serif;
 	background-position: center; 
 	transition: background-image 0.5s ease-in-out; 
+}
+
+h2
+{
+	font-size: 1.15em;
+	margin-top: -2%;
 }
 
 header
@@ -25,39 +31,85 @@ header
     border-left-style: none;
         margin-top: -15px;
 }
+
+.material-symbols-outlined
+{
+	cursor: pointer;	
+}
+
+.content
+{
+	display: none;
+}
+
 #main_Icon
 {
 	display:inline-block;
 	margin-right: 5%;
     margin-left: -5%;
     font-size: 35px;
-
-
 }
 
-#menu_Icon
+
+.menu_Icon
 {	
 	margin-left: 5%;
-	 font-size: 35px;
+	font-size: 35px;
+	position: relative;
+  	display: inline-block;
+}
+
+.menu_Content span
+{
+	display: block;
+
+}
+
+.menu_Content
+{
+	display: none;
+	position: absolute;
+	background-color: #7db8d3;
+  	z-index: 1;
+  	min-width: 100px;
+  	border-radius: 15px;
+}
+
+.menu_Content a
+{
+	font-family: Arial;
+	color: white;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+  	font-size: 10px;
+
+}
+
+#menu_Icon:hover .menu_Content
+{
+	display: block;
 }
 
 
 
-h1 {
+#main_Title
+{
 	display:inline-block;
 	font-family: Oxygen;
 	font-weight: 900;
 	line-height: 1em;
-    text-shadow: 0px 0px 2px white;
     transition: 0.3s;
-    
-
+   	animation: glow 2s ease-in-out infinite alternate;
+   	margin-left: 10%;
+    margin-right: 10%;
 }
 
+@-webkit-keyframes glow {
 
-h2
-{
-	margin-top: -20px;
+  to {
+    text-shadow: 0px 0px 5px white;
+  }
 }
 
 span:hover
@@ -70,17 +122,25 @@ span:hover
 	margin-top: -20px;
 }
 
+#content_Info
+{
+	margin-left: 10%;
+    margin-right: 10%;
+}
+
+.li_Content
+{
+	cursor: pointer;
+
+}
 
 footer 
 {
-	margin-top: 5%;
-	background-color: #0048634d;;
+	margin-top:6%;
+	background-color: #00486391;
     color: #ffffff;
-    border: none;
-    padding: 10px 20px;
+    padding: 12px;
     font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
 }
 
 .next_Button
@@ -96,11 +156,14 @@ footer
     animation: glow 2s infinite;
 }
 
-img:hover
+
+img
 {
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    cursor: pointer;
+	text-align: center;
+	margin: auto;
 }
+
+
 
 .listado-horizontal 
 {
@@ -116,13 +179,15 @@ img:hover
 margin-right: 20px;
 }
 
-li:hover 
+li
 {
+	cursor: context-menu;
 }
 
 #text_Content
 {
 	transition: opacity 0.5s ease-in-out;
+	margin-top: -2%;
 }
 
 #text_Info
@@ -132,15 +197,14 @@ li:hover
     word-spacing: 2px;
     letter-spacing: 2px;
     line-height: 1.5;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .moreContent {
     padding-top: 50px;
     text-align: center;
         }
-
-#li_Acaparamiento
+li_Content
 {
-    font-weight: bold;
+	font-weight: normal;
 }

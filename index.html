@@ -18,100 +18,87 @@
 </head>
 <body id="body">
 	<header>
-		<span id="main_Icon" class="material-symbols-outlined" style="visibility: visible;">home</span>
+		<span id="main_Icon" class="material-symbols-outlined" style="visibility: visible;" onclick="redireccionar('index.html')">home</span> </a>
 		<h1 id="main_Title">¿DÓNDE ESTÁ EL AGUA?</h1>
-		<span id="menu_Icon"class="material-symbols-outlined" style="visibility: visible;">menu</span>
+
+		<span id="menu_Icon" class="material-symbols-outlined">menu
+		<div class="menu_Content">
+			<a class="menu_Content" href="#">Inicio</a>
+			<a class="menu_Content" href="#">Fuentes</a>
+			<a class="menu_Content" href="#">Equipo</a>
+		</div>
+		 </span>
+
 		<p id="main_Description" style="visibility: visible;"> Una mirada y análisis al acaparamiento del agua en México y el estado de Guanajuato </p>
 	</header>
 
+
 	<div id="content" style="visibility: visible;">
 		<ul class="listado-horizontal">
-			<li id="li_Acaparamiento">Acaparamiento</li>
-			<li id="li_Acaparadores">Acaparadores</li>
-			<li id="li_Consecuencias">Consecuencias</li>
-			<li id="li_Acciones">Acciones</li>
-			<li id="li_Conclusion">Conclusión</li>
+			<li class="li_Content" id="li_Acaparamiento" onclick="show_Content('li_Acaparamiento','content_Acaparamiento')">Acaparamiento</li>
+
+			<li class="li_Content" id="li_Acaparadores" onclick="show_Content('li_Acaparadores','content_Acaparadores')">Acaparadores</li>
+
+			<li class="li_Content" id="li_Consecuencias" onclick="show_Content('li_Consecuencias','content_Consecuencias')">Consecuencias</li>
+
+			<li class="li_Content" id="li_Acciones" onclick="show_Content('li_Acciones','content_Acciones')">Acciones</li>
+
+			<li class="li_Content" id="li_Conclusion" onclick="show_Content('li_Conclusion','content_Conclusion')">Conclusión</li>
 		</ul>
 
-		<div id="content_Acaparamiento" style="visibility: ">
+		<div class="content" id="content_Acaparamiento" style="display: block;">
 			<h2 id="text_Content"> ACAPARAMIENTO </h2>
 			<p id="text_Info"> El acaparamiento de agua es la concentración desproporcionada de recursos hídricos por parte de empresas, industrias o personas, limitando el acceso a comunidades y ecosistemas locales y generando escasez en zonas vulnerables. </p>
-			<br>
-			<img style="width: 50%;" src="https://serendipia.digital/wp-content/uploads/2022/07/Portada_Concesiones_agua_Serendipia.png">
-			<br>
-			<br>
-			<img src="https://ipsnoticias.net/wp-content/uploads/2021/06/MEXCRISISHIDRICA1.jpg">
-			<br>
-			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Acaparadores()">
-			<br>
+			<img class="imgs" style="width: 30%; " src="https://serendipia.digital/wp-content/uploads/2022/07/Portada_Concesiones_agua_Serendipia.png">
+
 		</div>
 
-		<div id="content_Acaparadores" style="visibility: hidden;">
-			<br>
+	
+		<div class="content" id="content_Acaparadores">
 			<h2 id="text_Content"> ACAPARADORES </h2>
 			<p id="text_Info"> En México, los acaparadores de agua incluyen grandes empresas agrícolas que utilizan prácticas intensivas, la industria minera que consume grandes volúmenes de agua, y compañías multinacionales de bebidas que extraen recursos hídricos para la producción de refrescos y aguas embotelladas. También están los desarrolladores inmobiliarios que requieren agua para proyectos de construcción y, en ocasiones, gobiernos locales que otorgan concesiones a estas empresas, priorizando intereses económicos sobre el acceso al agua de las comunidades. Este acaparamiento limita el derecho al agua de las poblaciones vulnerables y agrava la escasez hídrica.</p>
+			<img style="width: 26%;"src="https://i.ytimg.com/vi/aJ8rqNjR8Fk/maxresdefault.jpg">
 			<br>
-			<img style="width: 30%;"src="https://i.ytimg.com/vi/aJ8rqNjR8Fk/maxresdefault.jpg">
-			<br>
-			<img style="width: 30%;" src="https://th.bing.com/th/id/R.c59a4050a775d2410fff46563c95628f?rik=IJHRxgKwSN3XKA&pid=ImgRaw&r=0">
-			<br>
+			<!-- <img style="width: 30%;" src="https://th.bing.com/th/id/R.c59a4050a775d2410fff46563c95628f?rik=IJHRxgKwSN3XKA&pid=ImgRaw&r=0">-->
 			
-			<br>
-			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Consecuencias()">
 		</div>
 
-		<div id="content_Consecuencias" style="visibility: hidden;">
-			<br>
+		<div class="content" id="content_Consecuencias">
 			<h2 id="text_Content"> CONSECUENCIAS </h2>
 			<p id="text_Info"> Las consecuencias del acaparamiento de agua en México son graves y variadas. La escasez de agua potable afecta a millones de personas, especialmente en comunidades vulnerables, limitando su acceso a este recurso esencial. Además, la sobreexplotación de acuíferos provoca la degradación de ecosistemas, la pérdida de biodiversidad y el deterioro de la calidad del agua. También se generan conflictos sociales y económicos entre comunidades locales y empresas que controlan los recursos hídricos, exacerbando las desigualdades y creando tensiones en regiones ya afectadas por la sequía.</p>
-			<br>
-			<img src="https://www.tridenteinformativo.com/wp-content/uploads/2022/07/17_07_2022_Saqueo-sequia-y-acaparamiento-del-agua_-web-1536x819.png" style="width: 50%;">
-			<br>
-			
-			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Acciones()">
-			<br>
-			<br>
+			<img src="https://www.tridenteinformativo.com/wp-content/uploads/2022/07/17_07_2022_Saqueo-sequia-y-acaparamiento-del-agua_-web-1536x819.png" style="width: 25%;">
+			<img src="https://www.gob.mx/cms/uploads/article/main_image/100561/donkey-water_1.jpg" style="width: 25%;">
 		</div>
 
-		<div id="content_Acciones" style="visibility: hidden;">
+		<div class="content" id="content_Acciones">
 			<h2 id="text_Content"> ACCIONES </h2>
 			<p id="text_Info">  </p>
 
 			<ul style="font-size: 25px;">
-				<li>1. Gestión de recursos hídricos: Es importante gestionar los recursos hídricos de manera eficiente y sostenible, para asegurar que el agua sea utilizada de manera responsable y equitativa. </li>
+				<li>Gestión de recursos hídricos:  Es importante gestionar los recursos hídricos de manera eficiente y sostenible, para asegurar que el agua sea utilizada de manera responsable y equitativa. </li>
 
-				<li> 2. Infraestructura de agua: Es necesario invertir en infraestructura de agua, como presas, canales y sistemas de riego, para garantizar que el agua llegue a quienes la necesitan. </li>
+				<li>Infraestructura de agua:  Es necesario invertir en infraestructura de agua, como presas, canales y sistemas de riego, para garantizar que el agua llegue a quienes la necesitan. </li>
 
-				<li> 3. Uso eficiente del agua: Es importante promover el uso eficiente del agua en la agricultura, la industria y el consumo doméstico, para reducir el desperdicio y asegurar que el agua sea utilizada de manera responsable. </li>
+				<li>Uso eficiente del agua Es importante promover el uso eficiente del agua en la agricultura, la industria y el consumo doméstico, para reducir el desperdicio y asegurar que el agua sea utilizada de manera responsable. </li>
 
-				<li> 4. Educación y conciencia: Es importante educar a la población sobre la importancia del agua y la necesidad de usarla de manera responsable, para cambiar comportamientos y hábitos que contribuyen al acaparamiento del agua. </li>
+				<li>Educación y conciencia Es importante educar a la población sobre la importancia del agua y la necesidad de usarla de manera responsable, para cambiar comportamientos y hábitos que contribuyen al acaparamiento del agua. </li>
 			</ul>
 
 			<img style="width: 50%"	src="https://ecologiahoy.net/wp-content/uploads/2014/12/infografia-cuidar-el-agua.jpg">
 
-			<br>
-			<img id="arrow_Button" src="images/down_Arrow.png" onclick="show_Conclusion()">
 		</div>
 
-		<div id="content_Conclusion" style="visibility: hidden;">
-			<br>
+		<div class="content" id="content_Conclusion">
 			<h2 id="text_Content"> CONCLUSIÓN </h2>
 			<p id="text_Info"> El acaparamiento del agua es un tema complejo en México. Aunque hay una gran disponibilidad de agua en el país, su distribución es desigual y hay un acceso limitado al agua potable para algunas comunidades. El uso excesivo del agua para la agricultura y la industria, sumado a la contaminación y la falta de infraestructura, agrava el problema. Es necesario abordar este problema con políticas públicas efectivas que promuevan la gestión sostenible del agua, la equidad en el acceso y la protección de los derechos de las comunidades locales. Es importante también fomentar la conciencia y educación sobre el uso responsable del agua y promover el uso de tecnologías que permitan un uso más eficiente del recurso hídrico. Solo así se podrá garantizar que el agua sea un derecho humano fundamental y no un privilegio para unos pocos. </p>
-			<br>
-
-			<img style="width: 50%;"	src="https://vectormine.b-cdn.net/wp-content/uploads/water_management_hands_outline_concept-1.jpg">
-			<br>
+			<img style="width: 30%;"	src="https://vectormine.b-cdn.net/wp-content/uploads/water_management_hands_outline_concept-1.jpg">
 			<br>
 			<br>
 			<h2 id="text_Content"> FUENTES </h2>
+
 			<a style="color: white;"	href="https://www.tni.org/es/publicaci%C3%B3n/el-acaparamiento-mundial-de-aguas-guia-basica"> Kay, J. F. (2023b, noviembre 22). El acaparamiento mundial de aguas: guía básica | Transnational Institute. Transnational Institute. https://www.tni.org/es/publicaci%C3%B3n/el-acaparamiento-mundial-de-aguas-guia-basica </a>
 		</div>
-
 	</div>
-
-	
-
-
 
 
 <footer> 
